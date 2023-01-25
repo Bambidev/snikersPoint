@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+:root {
+    --principal: #161616;
+    --secundario: #212121;
+    --terciario: #00FFE0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--principal);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    backdrop-filter: blur(100px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+section {
+    margin: 5rem 0rem;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-branding {
+    display: flex;
+}
+
+.nav-shopcar {
+    display: flex;
+}
+
+.logo {
+    max-width: 120px;
+    
+}
+
+.nav-item a, i {
+    color: white;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: rgb(179, 113, 255);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.shopcar {
+    font-size: 28px;
+}
+
+.bar {
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.bar:nth-child(2) {
+    background-color: rgb(179, 113, 255);
+    width: 20px;
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.actived .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.actived .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.actived .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 0;
+        top: -300%;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+        border-radius: 0px 0px 20px 20px;
+        padding-bottom: 15px;
+        background-color: #0b0b0bc1;
+    }
+
+    .nav-item {
+        margin: 16px 0px;
+    }
+
+    .nav-menu.actived {
+        top: 70px;
+        left: 0;
+    }
+}
+
+/* Body */ 
+
+.portada {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.carousel-indicators {
+    margin-bottom: 10px;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
