@@ -28,6 +28,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 section {
@@ -40,7 +41,7 @@ ul {
 
 .container {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -138,6 +139,7 @@ ul {
         border-radius: 0px 0px 20px 20px;
         padding-bottom: 15px;
         background-color: #0b0b0bc1;
+        z-index: 1000;
     }
 
     .nav-item {
