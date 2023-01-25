@@ -38,6 +38,11 @@ section {
 
 ul {
     margin-bottom: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
 }
 
 .container {
@@ -153,7 +158,7 @@ ul {
     }
 }
 
-/* Body */ 
+/* Home */ 
 
 .portada {
     width: 100%;
@@ -188,4 +193,93 @@ ul {
     .carousel-control-next, .carousel-control-prev {
         width: 7%;
     }
-}   
+}
+
+/* Productos */
+
+.section__title {
+    color: white;
+    text-align: center;
+}
+
+.cajonera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.form__container, .filter__container {
+    background-color: #212121;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+.col-25 {
+    flex: 2.5;
+    text-align: right;
+}
+
+.col-50 {
+    flex: 5;
+}
+
+.filter__container {
+    display: flex;
+    padding: 10px;
+    font-size: 23px;
+}
+
+i:hover {
+    color: rgb(179, 113, 255);
+    cursor: pointer;
+}
+
+.form_search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.separador {
+    width: 1px;
+    height: 30px;
+    background-color: rgb(105, 105, 105);
+}
+
+.search__input {
+    background-color: transparent;
+    width: 85%;
+    border: none;
+    outline: #828282;
+    color: #828282;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    display: flex;
+}
+
+.separador__cajonera {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #828282;
+    margin-top: 20px;
+}
+
+@media(max-width:768px) {
+    .search__input {
+        width: 80px;
+    }
+}
+
+.productos__container {
+    height: 500px;
+    width: 100%;
+    background-color: #212121;
+    border-radius: 20px;
+    margin-top: 20px;
+}
