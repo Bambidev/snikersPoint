@@ -24,6 +24,7 @@ body {
 
 header {
     backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     position: fixed;
     top: 0;
     left: 0;
