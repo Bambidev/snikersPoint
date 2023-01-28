@@ -13,6 +13,10 @@
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -277,9 +281,117 @@ button {
 }
 
 .productos__container {
-    height: 500px;
     width: 100%;
     background-color: #212121;
     border-radius: 20px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 10px;
 }
+
+.producto {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.img__producto:hover {
+    transform: rotate(-10deg) scale(1.2);
+    transition: .4s ease-in-out;
+}
+
+.descripcion__producto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nombre__producto {
+    color: white;
+    font-size: 20px;
+}
+
+.categoria__producto {
+    color: #a4a4a4;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.precio__container__producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precio__producto__antes {
+    color: #8b8c8c;
+    padding: 5px 20px;
+    font-weight: 300;
+    text-decoration:line-through;
+    font-size: 16px;
+}
+
+.precio__producto {
+    background: linear-gradient(83.35deg, #FF00C7 8.69%, #2400FF 127.08%);
+    padding: 5px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.img__container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__producto {
+    max-width: 200px;
+    transition: .4s ease-in-out;
+}
+
+.boton__producto {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* footer */
+
+.footer {
+    background-color: #232323;
+}
+
+.footer__container {
+    color: white;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+.footer__title {
+    font-size: 20px;
+}
+
+#home  {
+    scroll-margin: 30rem;
+}
+
