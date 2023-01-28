@@ -35,7 +35,7 @@ const renderProduct = (img,nombre,categoria,precio,precioAnterior) => {
 }
 
 renderProduct("./assets/img/nike/Air Flywire.png", "Nike Flywire", "Nike", 56000, 70000)
-renderProduct("./assets/img/nike/Air Force 1 botas.png", "Nike Air Force 1 Botas", "Nke", 38000, 50000)
+renderProduct("./assets/img/nike/Air Force 1 botas.png", "Nike Air Force 1 Botas", "Nike", 38000, 50000)
 renderProduct("./assets/img/nike/Air Force 1.png", "Nike Force 1", "Nike", 35000, 40000)
 renderProduct("./assets/img/nike/Air Jordan 1.png", "Nike Jordan 1", "Nike", 46000, 60000)
 renderProduct("./assets/img/nike/Air Jordan 11.png", "Nike Jordan 11", "Nike", 76000, 90000)
