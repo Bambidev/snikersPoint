@@ -13,6 +13,15 @@ const succesmodal = document.querySelector('.add-modal')
 const deleteBtn = document.querySelector('.borrar-btn')
 const total = document.querySelector('.total')
 const buyBtn = document.querySelector('.comprar-btn')
+const header = document.querySelector('.header')
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    header.classList.add('background__white')
+  } else {
+    header.classList.remove('background__white')
+  }
+})
 
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -324,8 +333,6 @@ const init = () => {
     disableBtn(deleteBtn)
     disableBtn(buyBtn)
     renderCartBubble()
-
-    console.log(cart);
 }
 
 init()

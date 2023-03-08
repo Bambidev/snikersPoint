@@ -48,9 +48,6 @@
                 <div class="cart__content">
                 <h2>Carrito</h2>
                 <div class="cart-container">
-                    
-
-
 
                 </div>
       
@@ -72,14 +69,34 @@
 
     <!-- Main -->
 
-    <img class="sombra1" src="./assets/img/sombra1.png" alt="sombra1">
-
-    <main class="container">
+    <main class="">
         <section id="home">
-            <img class="portada" src="./assets/portada1.png" alt="">
+            <img class="home__logo" src="./assets/logo.png" alt="home__logo">
+            <p class="home__desc">Tu destino para encontrar zapatillas de deporte de última moda. Ofrecemos una amplia colección de marcas líderes, envíos rapidos y opciones de pago seguras.</p>
+            <div class="buttons__start">
+                <a class="main__button" href="#productos">Explorar</a>
+                <a class="secondary__button" href="/register.html">Registrarte</a> 
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <img class="logo__stat" src="./assets/icons/circle.svg" alt="">
+                    <h4>Envios</h4>
+                    <p>Los mas rapidos</p>
+                </div>
+                <div class="stat">
+                    <img class="logo__stat" src="./assets/icons/offer check.svg" alt="">
+                    <h4>Lideres</h4>
+                    <p>Liderando el mercado</p>
+                </div>
+                <div class="stat">
+                    <img class="logo__stat" src="./assets/icons/credit card.svg" alt="">
+                    <h4>Pagos</h4>
+                    <p>Seguridad</p>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section class="section__margin">
             <h2 class="section__title">Categorias</h2>
         </section>
 
@@ -95,26 +112,12 @@
             </button>
         </div>
 
-        <section id="productos">
-            <div class="cajonera">
-                <div class="col-25">
-                    <form class="form__container form_search" action="">
-                        <input class="search__input" type="search">
-                        <div class="separador"></div>
-                        <button>
-                            <i class='bx bx-search' ></i>
-                        </button>
-                    </form>
-                </div>
-                <h2 class="section__title col-50">Productos</h2>
-                <div class="col-25">
-                    <i class='filter__container bx bx-filter-alt' ></i>
-                </div>
-            </div>
+        <section id="productos" class="section__margin">
+            <h2 class="section__title col-50">Productos</h2>
 
             <div class="separador__cajonera"></div>
-            
-            <div class="productos__container">
+        
+            <div class="productos__container container">
 
                 
             </div>
@@ -126,12 +129,15 @@
             
             <div class="payments__container">
                 <h2 class="section__title">Metodos de pago</h2>
-                <div class="payments__options">
-                    <div class="payments__logo__container">
-                        <p class="title__payment">Paga con los mejores metodos de pago!</p>
-                    
-                        <div class="options">
 
+                <div class="payments__options">
+        
+                        <div class="">
+                            <h3 class="title__payment">Paga con los mejores metodos de pago!</h3>
+                            <p class="desc__payment">Ofrecemos amplica opciones de metodos de pagos, para que pagar sea lo mas comodo y rapido!</p>
+                        </div>
+
+                        <div class="options">
                             <p class="option__title">Cryptocurrency</p>
                             <div class="option">
                                     <img class="option__img" src="./assets/img/payments/btc.png" alt="">
@@ -154,24 +160,40 @@
                     </div>
                     
                 </div>
+
+
+
             </div>
         </section>
 
         <section id="contact">
             <div class="contact__container">
                 <h2 class="section__title">Contacto</h2>
+
                 <div class="section__content">
                     <div class="contact__desc">
                         <p>Contactanos</p>
                         <form class="form" action="">
-                            <input type="text" placeholder="Nombre">
-                            <input type="text" placeholder="Mensaje">
-                            <input class="boton__comenzar submit__form" type="Submit" value="Enviar">
+                            <div class="campo">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" placeholder="Nombre">
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="Mensaje">Mensaje</label>
+                                <input type="text" id="Mensaje" placeholder="Mensaje">                               
+                            </div>
+
+                            <div class="campo">
+                                <label for="telefono">Telefono</label>
+                                <input type="tel" placeholder="Telefono" id="telefono">
+                             
+                            </div>
+                            <input class="submit__form" type="Submit" value="Enviar">                    
                         </form>
                     </div>
-                    <div class="separador-contacto"></div>
-                    <div class="">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10759.597388221588!2d-122.32040161654018!3d47.60864680186474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20Washington%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1665458174397!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact__msg">
+                        <img class="logo__contact" src="./assets/logo.png" alt="logo__constact">
                     </div>
                 </div>
             </div>
@@ -180,13 +202,29 @@
 
     <footer class="footer">
         <div class="container footer__container">
-            <h4 class="footer__title">Hecho con ❤️ de Bambino</h4>
+            <h3>Novedades</h3>
+            <p>Suscribite y no te pierdas ninguna oferta!</p>
+            <form action="">
+                <input type="ema">
+                <button>Suscribirse</button>
+            </form>
+            <div class="redes">
+                <a href="" class="icon__red"></a>
+                <a href="" class="icon__red"></a>
+                <a href="" class="icon__red"></a>
+                <a href="" class="icon__red"></a>
+            </div>
+        </div>
+        <div class="secciones__footer">
+            <h3>Secciones</h3>
+            <a href="#home" class="seccion__footer">Home</a>
+            <a href="#payments" class="seccion__footer">Pagos</a>
+            <a href="#contact" class="seccion__footer">Contact</a>
+            <a href="./login.html" class="seccion__footer">Iniciar</a>
         </div>
     </footer>
     <div class="add-modal"></div>
     <script src="./data.js"></script>
     <script src="./main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>
