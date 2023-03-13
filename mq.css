@@ -3,6 +3,10 @@
         max-width: 600px;
     }
 
+    .secciones__footer {
+        width: 40%;
+    }
+
     #home {
         gap: 30px;
         background-position: center center;
@@ -46,27 +50,86 @@
         max-width: 90%;
         line-height: 18 px;
     }
-
-    .footer {
-        background-color: black;
-    }
-
-    .footer__container {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .logo__footer {
-        max-width: 200px;
-    }
-
-    .secciones__footer {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 @media(max-width:768px) {
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .payments__options {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .payments__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .options {
+        width: 90%;
+    }
+
+    .title__payment {
+        text-align: center;
+        width: 90%;
+        font-size: 30px;
+        margin: 0rem;
+        line-height: 30px;
+    }
+
+    .desc__payment {
+        width: 100%;
+        color: rgb(193, 194, 194);
+    }
+
+    .contact__msg {
+        display: none;
+    }
+
+    .home__logo {
+        width: 350px;
+    }
+
+    .stats {
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo__stat {
+        margin: 0px;
+    }
+
+    .stat {
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .home__desc {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .news__footer, .secciones__footer {
+        width: 100%;
+    }
 
     .hamburger {
         display: block;
@@ -136,5 +199,11 @@
     .active {
         border: 2px solid white;
         box-shadow: 0px 0px 20px rgba(108, 127, 209, 0.534);
+    }
+}
+
+@media(max-width:490px) {
+    .stats {
+        width: 100%;
     }
 }

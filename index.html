@@ -81,18 +81,24 @@
             </div>
             <div class="stats">
                 <div class="stat">
-                    <img class="logo__stat" src="./assets/icons/circle.svg" alt="">
+                    <div class="left__stat">
+                        <img class="logo__stat" src="./assets/icons/circle.svg" alt="">
                     <h4>Envios</h4>
+                    </div>
                     <p>Los mas rapidos</p>
                 </div>
                 <div class="stat">
-                    <img class="logo__stat" src="./assets/icons/offer check.svg" alt="">
-                    <h4>Lideres</h4>
+                    <div class="left__stat">
+                        <img class="logo__stat" src="./assets/icons/offer check.svg" alt="">
+                        <h4>Lideres</h4>
+                    </div>
                     <p>Liderando el mercado</p>
                 </div>
                 <div class="stat">
-                    <img class="logo__stat" src="./assets/icons/credit card.svg" alt="">
-                    <h4>Pagos</h4>
+                    <div class="left__stat">
+                        <img class="logo__stat" src="./assets/icons/credit card.svg" alt="">
+                        <h4>Pagos</h4>
+                    </div>
                     <p>Seguridad</p>
                 </div>
             </div>
@@ -134,7 +140,7 @@
 
                 <div class="payments__options">
         
-                        <div class="">
+                        <div class="payments__info">
                             <h3 class="title__payment">Paga con los mejores metodos de pago!</h3>
                             <p class="desc__payment">Ofrecemos amplica opciones de metodos de pagos, para que pagar sea lo mas comodo y rapido!</p>
                         </div>
@@ -204,19 +210,26 @@
 
     <footer class="footer">
         <div class="footer__container container">
-            <div class="">
+            <div class="news__footer">
                 <img class="logo__footer" src="./assets/logo.png" alt="">
-                <h3>Novedades</h3>
-                <p>Suscribite y no te pierdas ninguna oferta!</p>
+                <p class="title__news">Suscribite y no te pierdas ninguna oferta!</p>
                 <form action="">
-                    <input type="ema">
+                    <input class="input__footer" placeholder="Ingrese Email" type="email">
                     <button>Suscribirse</button>
                 </form>
                 <div class="redes">
-                    <a href="" class="icon__red"></a>
-                    <a href="" class="icon__red"></a>
-                    <a href="" class="icon__red"></a>
-                    <a href="" class="icon__red"></a>
+                    <a href="" class="icon__red">
+                        <img src="./assets/icons/ig.png" alt="">
+                    </a>
+                    <a href="" class="icon__red">
+                        <img src="./assets/icons/facebook.png" alt="">
+                    </a>
+                    <a href="" class="icon__red">
+                        <img src="./assets/icons/twitter.png" alt="">
+                    </a>
+                    <a href="" class="icon__red">
+                        <img src="./assets/icons/wsp.png" alt="">
+                    </a>
                 </div>
             </div>
             <div class="secciones__footer">
@@ -229,8 +242,9 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <p>Todos los derechos reservados SnickersPoint 2023</p>
+        <div class="footer__copy">
+            <p>Todos los derechos reservados SnickersPoint 2023</p>
+        </div>
     </footer>
     <div class="add-modal"></div>
     <script src="./data.js"></script>
