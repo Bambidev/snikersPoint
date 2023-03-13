@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SneakersPoint</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mq.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <header class="header">
@@ -201,27 +203,34 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer__container">
-            <h3>Novedades</h3>
-            <p>Suscribite y no te pierdas ninguna oferta!</p>
-            <form action="">
-                <input type="ema">
-                <button>Suscribirse</button>
-            </form>
-            <div class="redes">
-                <a href="" class="icon__red"></a>
-                <a href="" class="icon__red"></a>
-                <a href="" class="icon__red"></a>
-                <a href="" class="icon__red"></a>
+        <div class="footer__container container">
+            <div class="">
+                <img class="logo__footer" src="./assets/logo.png" alt="">
+                <h3>Novedades</h3>
+                <p>Suscribite y no te pierdas ninguna oferta!</p>
+                <form action="">
+                    <input type="ema">
+                    <button>Suscribirse</button>
+                </form>
+                <div class="redes">
+                    <a href="" class="icon__red"></a>
+                    <a href="" class="icon__red"></a>
+                    <a href="" class="icon__red"></a>
+                    <a href="" class="icon__red"></a>
+                </div>
+            </div>
+            <div class="secciones__footer">
+                <h3>Secciones</h3>
+                <div class="secciones__links">
+                    <a href="#home" class="seccion__footer">Home</a>
+                    <a href="#payments" class="seccion__footer">Pagos</a>
+                    <a href="#contact" class="seccion__footer">Contact</a>
+                    <a href="./login.html" class="seccion__footer">Iniciar</a>
+                </div>
             </div>
         </div>
-        <div class="secciones__footer">
-            <h3>Secciones</h3>
-            <a href="#home" class="seccion__footer">Home</a>
-            <a href="#payments" class="seccion__footer">Pagos</a>
-            <a href="#contact" class="seccion__footer">Contact</a>
-            <a href="./login.html" class="seccion__footer">Iniciar</a>
-        </div>
+        <hr>
+        <p>Todos los derechos reservados SnickersPoint 2023</p>
     </footer>
     <div class="add-modal"></div>
     <script src="./data.js"></script>
