@@ -139,30 +139,22 @@ const applyFilter = e => {
     }   
 }
 
-
-
-
-
-
-
-
-
-
 const renderCartProduct = ({ id, name,  price, img, quantity }) => {
     return `
    <div class="product-list">
+   <img class="img__product__carrito" src="${img}" alt="">
     <div class="left">
-        <img class="img__product__carrito" src="${img}" alt="">
         <div class="infoProduct">
             <h4>${name}</h4>
             <h5>${price}</h5>
+        </div>
+        <div class="addDelete">
+          <span class="quantity-handler down" data-id=${id}>-</span>
+          <span class="item-quantity">${quantity}</span>
+          <span class="quantity-handler up" data-id=${id}>+</span>
+        </div>
       </div>
-      </div>
-      <div class="addDelete">
-      <span class="quantity-handler down" data-id=${id}>-</span>
-      <span class="item-quantity">${quantity}</span>
-      <span class="quantity-handler up" data-id=${id}>+</span>
-    </div>
+
   </div>
     `
   }
@@ -180,7 +172,7 @@ const renderCartProduct = ({ id, name,  price, img, quantity }) => {
   }
   
   const showTotal = () => {
-    total.innerHTML = `${getCartTotal().toFixed(2)}`
+    total.innerHTML = `$${getCartTotal().toFixed(2)}`
   }
   
   const isExistingCartProduct = ({ id }) =>

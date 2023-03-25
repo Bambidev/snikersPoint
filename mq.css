@@ -3,6 +3,10 @@
         max-width: 600px;
     }
 
+    .infoProduct {
+        width: 100%;
+    }
+
     .secciones__footer {
         width: 40%;
     }
@@ -58,6 +62,10 @@
         flex-direction: column;
     }
 
+    .product-list {
+        padding: 10px;
+    }
+
     .payments__options {
         flex-direction: column;
         justify-content: center;
@@ -98,12 +106,12 @@
     }
 
     .home__logo {
-        width: 350px;
+        width: 300px;
     }
 
     .stats {
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         padding: 0px;
         justify-content: center;
@@ -118,12 +126,31 @@
         flex-direction: row;
         align-items: center;
         width: 90%;
+        height: 50px;
         gap: 10px;
         justify-content: space-between;
+        padding: 5px;
+    }
+
+    .buttons__start {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stat p {
+        display: 100%;
+    }
+
+    .left__stat {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 
     .home__desc {
-        width: 80%;
+        width: 90%;
         font-size: 15px;
     }
 
@@ -148,7 +175,7 @@
     }
 
     .cart {
-        width: 80%;
+        width: 100%;
     }
 
     .nav-menu {
@@ -199,6 +226,10 @@
     .active {
         border: 2px solid white;
         box-shadow: 0px 0px 20px rgba(108, 127, 209, 0.534);
+    }
+
+    .left {
+        align-items: flex-start;
     }
 }
 
