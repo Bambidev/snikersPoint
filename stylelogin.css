@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(./assets/Frame\ 1backgound.png);
+    background: linear-gradient(291.06deg, #FC4C3F 11.32%, #FD8A5E 25.32%, #DF00DF 48.53%, #51E1E2 88.15%);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,25 +17,26 @@ body {
 }
 
 .form {
-    background-color: rgba(255, 255, 255, 0.047);
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(200px);
     margin: auto;
     width: 90%;
     max-width: 400px;
-    padding: 4em 3em;
+    padding: 2em 3em;
     border-radius: 20px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 40%);
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.972);
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.517) inset;
 }
 
 .form__title {
     font-size: 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .form__p {
  font-weight: 300;   
- color: white;
+ color: rgb(0, 0, 0);
 }
 
 .form__link {
@@ -46,7 +47,7 @@ body {
 .form__container {
     margin-top: 3em;
     display: grid;
-    gap: 2.5em;
+    gap: 2em;
 }
 
 .form__group {
@@ -57,17 +58,17 @@ body {
 .form__input {
     width: 100%;
     background: none;
-    color: #afafaf;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     padding: .6em .3em;
     border: none;
     outline: none;
-    border-bottom: 1px solid var(--color);
+    border-bottom: 1px solid rgb(203, 203, 203);
     font-family: 'Poppins', sans-serif;
 }
 
 .form__label {
-    color: var(--color);
+    color: rgb(97, 96, 96);
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -80,7 +81,7 @@ body {
 .form__input:not(:placeholder-shown) + .form__label {
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
-    color: #ffffff;
+    color: #000000;
 }
 
 .form__submit {
@@ -106,7 +107,7 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #000000;
     transform: scale(0);
     transform: left bottom;
     transition: all .4s;
@@ -131,4 +132,15 @@ body {
     font-size: 14px;
     border: none;
     outline: none;
+}
+
+.topInputs {
+    display: flex;
+    gap: 5px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
